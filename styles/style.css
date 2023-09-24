@@ -21,17 +21,18 @@ main {
   display: grid;
   justify-content: center;
   align-content: center;
-  margin: 130px 20px;
-  min-height: 70%;
+  margin: 150px 24px;
+  width: 327px;
+  min-height: 60%;
   background-color: white;
-  border-radius: 15px;
+  border-radius: 20px;
 }
 
 .images {
   margin: 0 auto;
   width: 240px;
   position: relative;
-  top: -62%;
+  top: -64%;
 }
 .images #cube {
   display: none;
@@ -43,4 +44,46 @@ main {
   position: absolute;
   bottom: -15%;
   left: 0%;
+}
+
+.faq {
+  margin: -60px 0px 50px;
+  width: 280px;
+}
+.faq h1 {
+  font-size: 36px;
+  text-align: center;
+  color: hsl(238, 29%, 16%);
+}
+.faq .box {
+  padding: 20px 0;
+  color: hsl(237, 12%, 33%);
+}
+.faq .box .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.faq .box .row p.que {
+  font-size: 14px;
+  line-height: 1.3;
+}
+.faq .box .row p.que:hover {
+  color: hsl(14, 88%, 65%);
+  cursor: pointer;
+}
+.faq .box .row img {
+  width: 11px;
+  height: 7px;
+}
+.faq .box .ans {
+  display: none;
+  margin-top: 8px;
+  line-height: 1.4;
+  width: 90%;
+  color: hsl(240, 6%, 50%);
+}
+.faq hr {
+  background-color: hsl(240, 5%, 91%);
+  height: 0.05px;
 }/*# sourceMappingURL=style.css.map */
