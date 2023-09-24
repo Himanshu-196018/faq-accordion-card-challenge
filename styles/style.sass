@@ -1,1 +1,55 @@
+// text colors
+$very-dark-blue: hsl(238, 29%, 16%)
+$very-dark-greyish-blue: hsl(237, 12%, 33%)
+$dark-greyish-blue: hsl(240, 6%, 50%)
+$soft-red: hsl(14, 88%, 65%)
 
+// background gradients
+$soft-violet: hsl(273, 75%, 66%)
+$soft-blue: hsl(240, 73%, 65%)
+
+// divider color
+$light-greyish-blue: hsl(240, 5%, 91%)
+
+// mixins
+@mixin grid($hor, $ver)
+    display: grid
+    justify-content: $hor
+    align-content: $ver
+
+*
+    box-sizing: border-box
+    margin: 0
+    padding: 0
+
+body
+    font:
+        family: "Kumbh Sans"
+        size: 12px
+    background:
+        image: linear-gradient($soft-violet, $soft-blue)
+
+main
+    min-height: 100vh
+    @include grid(center, center)
+
+.container
+    @include grid(center, center)
+    margin: 130px 20px
+    min-height: 70%
+    background-color: white
+    border-radius: 15px
+
+.images
+    margin: 0 auto
+    width: 240px
+    position: relative
+    top: -62%
+    #cube
+        display: none
+    #lady
+        width: 240px
+    #shadow
+        position: absolute
+        bottom: -15%
+        left: 0%

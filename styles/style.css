@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Kumbh Sans";
+  font-size: 12px;
+  background-image: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+}
+
+main {
+  min-height: 100vh;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
+
+.container {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  margin: 130px 20px;
+  min-height: 70%;
+  background-color: white;
+  border-radius: 15px;
+}
+
+.images {
+  margin: 0 auto;
+  width: 240px;
+  position: relative;
+  top: -62%;
+}
+.images #cube {
+  display: none;
+}
+.images #lady {
+  width: 240px;
+}
+.images #shadow {
+  position: absolute;
+  bottom: -15%;
+  left: 0%;
+}/*# sourceMappingURL=style.css.map */
