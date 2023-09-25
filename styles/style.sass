@@ -35,20 +35,22 @@ main
     @include grid(center, center)
 
 .container
-    @include grid(center, flex-start)
+    @include grid(center, center)
     margin: 148px 0 20px
     width: 327px
     min-height: 500px
     background-color: white
     border-radius: 23px
 
+#cube
+    display: none
+    position: absolute
+
 .images
     margin: 0 auto
     width: 240px
     position: relative
     top: -59%
-    #cube
-        display: none
     #lady
         width: 240px
     #shadow
@@ -115,3 +117,35 @@ footer
     color: white
     a
         color: $soft-red
+
+@media screen and (width > 970px)
+    .container
+        margin: 20px 0 0 44px
+        width: 920px
+        grid-template-columns: 1fr 1fr
+        position: relative
+
+    #cube
+        display: block
+        top: 202px
+        left: -94px
+        z-index: 2
+
+    .images
+        margin: 0
+        width: 100%
+        height: 500px
+        top: 0
+        overflow: clip
+
+        #lady
+            position: absolute
+            top: 67px
+            left: -85px
+
+        #shadow
+            bottom: -150px
+            left: -577px
+
+    .faq
+        margin: 0

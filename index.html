@@ -19,14 +19,23 @@
     <!-- main content of the page -->
     <main>
       <div class="container">
+        <img id="cube" src="images/illustration-box-desktop.svg" alt="" />
         <section class="images">
-          <img id="cube" src="images/illustration-box-desktop.svg" alt="" />
-          <img
-            id="lady"
-            src="images/illustration-woman-online-mobile.svg"
-            alt=""
-          />
-          <img id="shadow" src="images/bg-pattern-mobile.svg" alt="" />
+          <picture id="lady">
+            <source
+              media="(min-width: 970px)"
+              srcset="images/illustration-woman-online-desktop.svg"
+            />
+            <img src="images/illustration-woman-online-mobile.svg" alt="" />
+          </picture>
+
+          <picture id="shadow">
+            <source
+              media="(min-width: 970px)"
+              srcset="images/bg-pattern-desktop.svg"
+            />
+            <img src="images/bg-pattern-mobile.svg" alt="" />
+          </picture>
         </section>
         <section class="faq">
           <h1>FAQ</h1>
