@@ -80,19 +80,24 @@ main {
   width: 11px;
   height: 7px;
 }
+.faq .box .row img:hover {
+  cursor: pointer;
+}
 .faq .box .ans {
   display: none;
   margin-top: 10px;
   line-height: 1.5;
   width: 90%;
   color: hsl(240, 6%, 50%);
+  animation: slideDown 0.4s ease-out alternate;
 }
 .faq .open .que {
   font-weight: 700;
   color: hsl(237, 12%, 33%);
 }
 .faq .open img {
-  transform: rotate(180deg);
+  transform: rotateX(180deg);
+  transition: all 0.7s;
 }
 .faq .open .ans {
   display: block;
@@ -103,6 +108,16 @@ main {
   border: none;
 }
 
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
 footer {
   margin-bottom: 10px;
   text-align: center;
@@ -129,18 +144,18 @@ footer a {
   .images {
     margin: 0;
     width: 100%;
-    height: 500px;
+    min-height: 500px;
     top: 0;
     overflow: clip;
   }
   .images #lady {
     position: absolute;
-    top: 67px;
+    top: 70px;
     left: -85px;
     z-index: 1;
   }
   .images #shadow {
-    bottom: -150px;
+    top: -295px;
     left: -577px;
   }
   .faq {
