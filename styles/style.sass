@@ -62,7 +62,7 @@ main
     margin: -55px 0 46px
     width: 280px
     h1
-        font-size: 36px
+        font-size: 34px
         text-align: center
         letter-spacing: -2px
         color: $very-dark-blue
@@ -76,7 +76,7 @@ main
             justify-content: space-between
             align-items: center
 
-            p.que
+            .que
                 font-size: 14px
                 word-spacing: -2px
                 &:hover
@@ -118,6 +118,7 @@ footer
     a
         color: $soft-red
 
+//  style for large/desktop screen 
 @media screen and (width > 970px)
     .container
         margin: 20px 0 0 44px
@@ -142,10 +143,20 @@ footer
             position: absolute
             top: 67px
             left: -85px
+            z-index: 1
 
         #shadow
             bottom: -150px
             left: -577px
 
     .faq
-        margin: 0
+        margin: 62px 16px
+        width: 333px
+        h1
+            text-align: left
+            margin-bottom: 20px
+        .row
+            letter-spacing: 0.5px
+
+        .box .ans
+            width: 320px

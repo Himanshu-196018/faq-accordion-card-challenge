@@ -53,7 +53,7 @@ main {
   width: 280px;
 }
 .faq h1 {
-  font-size: 36px;
+  font-size: 34px;
   text-align: center;
   letter-spacing: -2px;
   color: hsl(238, 29%, 16%);
@@ -68,11 +68,11 @@ main {
   justify-content: space-between;
   align-items: center;
 }
-.faq .box .row p.que {
+.faq .box .row .que {
   font-size: 14px;
   word-spacing: -2px;
 }
-.faq .box .row p.que:hover {
+.faq .box .row .que:hover {
   color: hsl(14, 88%, 65%);
   cursor: pointer;
 }
@@ -137,12 +137,24 @@ footer a {
     position: absolute;
     top: 67px;
     left: -85px;
+    z-index: 1;
   }
   .images #shadow {
     bottom: -150px;
     left: -577px;
   }
   .faq {
-    margin: 0;
+    margin: 62px 16px;
+    width: 333px;
+  }
+  .faq h1 {
+    text-align: left;
+    margin-bottom: 20px;
+  }
+  .faq .row {
+    letter-spacing: 0.5px;
+  }
+  .faq .box .ans {
+    width: 320px;
   }
 }/*# sourceMappingURL=style.css.map */
